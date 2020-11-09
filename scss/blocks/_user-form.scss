@@ -1,0 +1,26 @@
+.user-form__input::selection {
+  background-color: $main-color;
+  color: $secondary-color;
+}
+
+.user-form__button {
+  background-color: $main-color;
+    color: $secondary-color;
+  border: 1px solid $main-color;
+  transition: background-color 0.2s ease,
+  color 0.2s ease,
+  opacity 0.2s ease;
+
+  &:hover {
+    background-color: $secondary-color;
+    color: $main-color;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    background-color: $secondary-color;
+  }
+}

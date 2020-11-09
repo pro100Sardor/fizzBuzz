@@ -1,0 +1,19 @@
+.page-main {
+  max-width: 650px;
+  width: 100%;
+  background-color: $secondary-color;
+  color: $main-color;
+  box-shadow: 0 0 20px -1px $secondary-color;
+}
+
+.page-main__title::selection {
+  background-color: $main-color;
+  color: $secondary-color;
+}
+
+.page-main__result {
+  background-color: $main-color;
+  color: $secondary-color;
+  cursor: not-allowed;
+  user-select: none;
+}

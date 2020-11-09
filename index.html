@@ -11,28 +11,32 @@
   <link rel="stylesheet" href="./css/main.min.css">
   <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
 </head>
-<body class="page__body page__body--nojs">
+<body class="page__body page__body--nojs align-items-center px-3">
   <script src="./js/nojs.min.js"></script>
 
-  <!-- HEADER part of page started -->
-
-  <header></header>
-
-  <!-- HEADER part of page ended -->
-
-
   <!-- MAIN part of page started -->
+  <main class="page-main d-flex flex-column align-items-center p-4 rounded">
+    <h1 class="sr-only">this website determines whether the number entered is fizz or buzz or fizzBuzz</h1>
 
-  <main class="page__main"></main>
+    <h2 class="page-main__title text-center display-4 mb-4">FizzBuzz</h2>
+
+    <form class="user-form mb-4" id="userForm" action="https://echo.htmlacademy.ru" method="GET">
+      <div class="form-row align-items-center">
+        <div class="col-sm-7 mb-3">
+          <input class="user-form__input form-control" type="number" name="user_number" id="userNumber" step="any" aria-label="enter an integer in this field at will" required autofocus>
+        </div>
+
+        <div class="col-sm-5 mb-3">
+          <button class="user-form__button form-control" type="submit" name="submit" value="submit">Show result</button>
+        </div>
+      </div>
+    </form>
+
+    <div class="page-main__result p-2 rounded text-center readonly" id="fizzBuzzResult">The result is shown here</div>
+  </main>
 
   <!-- MAIN part of page ended -->
 
-
-  <!-- FOOTER part of page started -->
-
-  <footer></footer>
-
-  <!-- FOOTER part of page ended -->
 
   <script src="./js/jquery-3.5.1.min.js"></script>
   <script src="./js/bootstrap.bundle.min.js"></script>
