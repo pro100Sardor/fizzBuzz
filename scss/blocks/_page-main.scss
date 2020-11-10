@@ -17,3 +17,7 @@
   cursor: not-allowed;
   user-select: none;
 }
+
+.page__body--nojs .page-main {
+  display: none!important;
+}
